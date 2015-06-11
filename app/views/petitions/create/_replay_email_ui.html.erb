@@ -7,7 +7,7 @@
   <p>If your email address is wrong, just change it above.</p>
 
   <%= form_row :class => 'button_row' do %>
-    <%= f.button 'Back', :name => 'move', :value => 'back', :class => 'button backwards_action', :tabindex => increment %>
-    <%= f.button 'Submit', :name => 'move', :value => 'next', :class => 'button forward_action', :tabindex => increment %>
+    <%= f.submit 'Back', :name => 'move:back', :class => 'button backwards_action', :tabindex => increment %>
+    <%= f.submit 'Submit', :name => 'move:next', :class => 'button forward_action', :tabindex => increment %>
   <% end %>
 </fieldset>

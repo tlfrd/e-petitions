@@ -1,4 +1,6 @@
 class PetitionsController < ApplicationController
+  include ManagingMoveParameter
+
   before_filter :sanitise_page_param
   before_filter :sanitise_state_param
 
@@ -100,11 +102,6 @@ class PetitionsController < ApplicationController
     title = params.delete(:title)
     params[:petition] ||= {}
     params[:petition][:title] = title
-  end
-
-  def assign_move
-    return if ['next', 'back'].include? params[:move]
-    params[:move] = 'next'
   end
 
   def assign_stage

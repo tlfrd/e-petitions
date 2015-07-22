@@ -17,6 +17,7 @@ Rails.application.config.assets.precompile += %w(
   admin.js
   homepage.js
   create-petition.js
+  thresholds.js
 )
 
 # Compress JavaScript assets.

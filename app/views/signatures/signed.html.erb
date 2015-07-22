@@ -27,3 +27,7 @@
 <p>To vote in local, national and EU elections, you must be registered to vote.</p>
 <p>It takes less than 5 minutes.</p>
 <a href="https://www.gov.uk/register-to-vote" rel="external">Register to vote</a>
+
+<% if @signature.number == 10000 || @signature.number == 100000 %>
+  <canvas id="decorator"></canvas>
+<% end %>

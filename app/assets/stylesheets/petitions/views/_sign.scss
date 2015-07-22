@@ -33,3 +33,11 @@
 .uk-citizen p {
   margin-bottom: 0;
 }
+
+#decorator {
+  position: absolute;
+  top: 0;
+  left: 0;
+  display: block;
+  pointer-events: none;
+}

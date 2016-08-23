@@ -1,5 +1,7 @@
 .admin {
-  .petition-meta, .signature-trends {
+  .petition-meta {
+    padding-top: $gutter *1.5;
+
     dl {
       dt {
         @include bold-19();
@@ -14,20 +16,8 @@
       }
     }
   }
-
-  .petition-meta-state, .petition-meta-signature-count {
-    @include core-36;
+  .petition-meta-state, .petition-metaa-signature-count {
+    @include core-48;
   }
 
-  .petition-meta {
-    padding-top: $gutter *1.5;
-  }
-
-  .signature-trends {
-    padding-top: 70px;
-  }
-
-  .petition-meta-state, .petition-meta-signature-count {
-    @include core-36;
-  }
 }
